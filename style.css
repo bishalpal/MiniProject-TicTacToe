@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -17,4 +19,55 @@ nav {
     font-size: larger;
     padding: 0 10px;
     font-family: 'Roboto', sans-serif;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    background-color: rgb(209, 170, 246);
+}
+
+.gameInfo {
+    padding: 0 30px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.imgBox img {
+    display: none;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
 }
