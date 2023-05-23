@@ -101,4 +101,16 @@ boxes.forEach(element => {
             }
         }
     });
-})
+});
+
+
+// add onclick listener on Reset button
+reset.addEventListener('click', ()=> {
+    Array.from(document.getElementsByClassName('boxtext')).forEach(element =>{
+        element.innerText = "";
+    });
+    document.getElementsByClassName('imgBox')[0].getElementsByTagName('img')[0].style.width = "0px";
+    gameend = false;
+    document.getElementsByClassName("info")[0].innerText = "Turn for " + pturn;
+});
+
