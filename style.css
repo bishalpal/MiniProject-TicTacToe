@@ -53,7 +53,8 @@ nav {
 }
 
 .imgBox img {
-    display: none;
+    width: 0;
+    transition: width 1s ease-in;
 }
 
 .bt-0{
