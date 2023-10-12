@@ -82,7 +82,7 @@ const checkwin = ()=> {
 };
 
 // Game logic
-// music.play();
+music.play();
 let boxes = Array.from(document.getElementsByClassName("box"));
 boxes.forEach(element => {
     let boxtext = element.querySelector(".boxtext");
